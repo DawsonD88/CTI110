@@ -23,7 +23,7 @@ while True:
 
     over = 0
             
-    #Create strings for input allowing for numbers to adjust with inputted data
+    #Create if/else statement for overtime pay adjustted with inputted data
     if hours > 40: #If equals 40 the just calculate regular pay
         over = float(int(hours - 40))
         regpay = float(pay * 40)
@@ -35,8 +35,8 @@ while True:
         regpay = float(pay * hours)
         overpay = 0
         gross = regpay
-
-    employee += 1
+    #Counter Update
+    employee += 1 
     total_over += overpay
     total_reg += regpay
     total_gross += gross
@@ -44,7 +44,7 @@ while True:
     print(f"\nHours Worked    Pay Rate    Overtime    OverTime Pay     RegHour Pay     Gross Pay") #Insert newline and format spacing for headers
     print("----------------------------------------------------------------------------------------")
     print(f"{hours:.1f} {pay:>15.1f} {over:>10.1f} {overpay:>14,.2f}           ${regpay:,.2f}        ${gross:,.2f}\n\n")    
-
+#Print Output data after completed loop
 print(f"\nTotal number of employees entered: {employee}")
 print(f"Total amount paid for overtime: ${total_over}")
 print(f"Total amount paid for regular hours: ${total_reg}")
