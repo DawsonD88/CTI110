@@ -1,3 +1,9 @@
+#Deiontay Dawson
+#7 July 2025
+#P4HW1_DawsonDeiontay
+#Creating Loop to collect data
+
+
 num_scores = int(input("How many scores do you want to enter? "))
 test_scores = []  # Move grades list outside the loop to store all scores
 
